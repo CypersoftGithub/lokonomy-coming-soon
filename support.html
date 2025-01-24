@@ -3,56 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Lokonomy</title>
+    <title>User Support</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: #f9f9f9;
             color: #333;
         }
         .container {
-            text-align: center;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-        .container img {
-            height: 100px;
-            margin-bottom: 20px;
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-bottom: 2px solid #007BFF;
         }
-        /* .container h1 {
+        header img {
+            height: 60px;
+        }
+        header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 24px;
             color: #007BFF;
-        } */
-        .container p {
-            margin: 20px 0;
-            font-size: 18px;
+        }
+        h2 {
+            color: #007BFF;
+            margin-top: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .footer {
+            text-align: center;
             margin-top: 20px;
-            font-size: 14px;
-            color: #777;
+            padding-top: 10px;
+            border-top: 1px solid #e0e0e0;
         }
+        .float {
+    position: fixed;
+    bottom: 4%;
+    right: 55px;
+}
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="./images/lokonomy.png" alt="lokonomy Logo">
-        <h1>
-            <span style="color: orange;">Users</span> <span style="color: rgb(3, 203, 3);">Support</span>
-        </h1>
-        <p>For assistance, contact our support team at <br>
-            <a href="mailto:support@lokonomy.in" style="color: black;text-decoration: none;font-weight: 600;">support@lokonomy.in</a> or call us at 
-            <a href="tel:+918758520110" style="color: black;text-decoration: none;font-weight: 600;">+91 87585 20110</a>.</p>
-        <p>We're here to help 24/7!</p>
+        <header>
+            <img src="./images/lokonomy.png" alt="lokonomy Logo">
+            <h1>Support</h1>
+        </header>
+        
+        <p><strong>User Supports</strong></p>
+        <p class="mt-4 mb-5 text-sm-left" style="color:#555">
+                            
+            <ul>
+                <li>
+                    <p>For assistance, contact our support team at <br>
+                        <a href="mailto:support@lokonomy.in" style="font-weight: 600;">support@lokonomy.in</a> or call us at 
+                        <a href="tel:+918758520110" style="font-weight: 600;">+91 87585 20110</a>. <br>
+                        For chat support user can directly access whatsapp.
+                    </p> 
+                        
+                    
+                </li>
+                <li>
+                    <p>We're here to help 24/7!</p>
+                </li>
+                
+            </ul>
+            <p><strong>Frequently Asked Quetion</strong></p>
+            <ol>
+                <li>
+                    <p> <span style="font-weight: 600;">What is Lokonomy?</span> 
+                        <ul>
+                            <li>
+                                lokonomy is a platform which connects local business to their customers with their digital presence and make their business reach to more people. 
+                            </li>
+                            <li>
+                                lokonomy also allows public to showcase their used or fresh product they wish to sell or demand their need. lokonomy makes job opening in local business more accessible to job seekers and also provide platform for individual professional / students to make their job profile visible. 
+                            </li>
+                            <li>
+                                lokonomy makes easier for business to show offers, new products or advertise to local public.
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: 600;">Is Lokonomy Free?</span>
+                        <ul>
+                            <li>
+                                lokonomy makes easier for business to show offers, new products or advertise to local public
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: 600;">Does Lokonomy allow me to show my products to other city?</span>
+                        <ul>
+                            <li>
+                                lokonomy's aim is to make local business presence noticeable and make their services available to local people easily.
+You can show your products, Advertise or show offers to the people of location where you register your business. though other people can view your business and service by changing their prefered city. But you can only post to your registered locations dashboard.
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                
+                
+            </ol>
+            <p><strong>Read <a href="lokonomy-privacy-policy.html">Privacy & Policies</a> And <a href="terms-and-conditions.html"> Terms & Conditions</a>.</strong></p>
+            <div class="float">
+                <a href="https://api.whatsapp.com/send?phone=+918758520110&%20text=I%20am%20looking%20for%20Your%20Product" target="_blank"><img src="./images/whatsapp.svg" width="60px" alt=""></a>
+            </div>
         <div class="footer">
             <p>&copy; 2025 lokonomy. All rights reserved.</p>
         </div>
