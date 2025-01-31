@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  background-color: #d9d9d9;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .plan {
+    background-color: #fff;
+    padding: 2.5rem;
+    margin: 12px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 23%;
+
+ 
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      margin-bottom: 1rem;
+      font-size: 30px;
+    }
+
+    ul.features {
+      list-style-type: none;
+      text-align: left;
+      li {
+        margin: 8px;
+        .fas {
+          margin-right: 4px;
+        }
+        .fa-check-circle {
+          color: #6ab04c;
+        }
+        .fa-times-circle {
+          color: #eb4d4b;
+        }
+      }
+    }
+.one{
+    width: 15px;
+    float: right;
+}
+.two{
+    fill: #eb4d4b;
+    width: 13px;
+}
+    button {
+      border: none;
+      width: 100%;
+      padding: 12px 35px;
+      margin-top: 1rem;
+      background-color: #168b09;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    &.popular {
+      border: 2px solid #168b09;
+      position: relative;
+      transform: scale(1.08);
+
+      /* span {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #6ab04c;
+        color: #fff;
+        padding: 4px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+      } */
+    }
+
+    &:hover {
+      box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+    }
+  }
+}
+
+.most{
+     position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:#168b09;
+        color: #fff;
+        padding: 10px 25px;
+        font-size: 18px;
+        border-radius: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .plan {
+    background-color: #fff;
+    padding: 2.5rem;
+    margin: 28px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 34%;}
+
+}}
+@media only screen and (max-width: 970px) {
+  .pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .plan {
+    background-color: #fff;
+    padding: 2.5rem;
+    margin: 19px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 45%;}
+
+}}
+
+@media only screen and (max-width: 768px) {
+  .pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .plan {
+    background-color: #fff;
+    padding: 2.5rem;
+    margin: 25px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%;}
+
+}}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 style="font-size: 50px;">Choose the plan that's right for you </h1>
+        <div class="pricing" style="margin-top: 150px;">
+            <div class="plan">
+                <h2>Basic</h2>
+                <ul class="features" style="margin-top: 40px;">
+                    <li>1 Month <span style="float: right;">₹300/-</span></li>
+                    <hr>
+                    <li>Feed <span style="float: right;">1 Post/Month</span></li>
+                    <hr>
+                    <li>Job Opening <svg xmlns="http://www.w3.org/2000/svg" class="one"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#ff0000"
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg></li>
+                    <hr>
+                    <li>Market On Sell<svg xmlns="http://www.w3.org/2000/svg" class="one"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#ff0000"
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg></li>
+                    <hr>
+                    <li>Market On Demand <svg xmlns="http://www.w3.org/2000/svg" class="one"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#ff0000"
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg></li>
+                </ul>
+                <button>Buy Now</button>
+            </div>
+
+
+            <div class="plan">
+                <h2>Standard</h2>
+                <!-- <div class="price">₹1700/-</div> -->
+                <ul class="features" style="margin-top: 40px;">
+                    <li>6 Months <span style="float: right;">₹1700/-</span></li><hr>
+                    <li>Feed <span style="float: right;" >3 Post/Month</span></li><hr>
+                    <li>Job Opening <svg xmlns="http://www.w3.org/2000/svg" class="one"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#ff0000"
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></li><hr>
+                    <li>Market On Sell<svg xmlns="http://www.w3.org/2000/svg" class="one"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#ff0000"
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></li><hr>
+                    <li>Market On Demand <svg xmlns="http://www.w3.org/2000/svg" class="one"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#ff0000"
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></li>
+                </ul>
+                <button>Buy Now</button>
+            </div>
+            <div class="plan popular">
+                <p class="most">Most Popular</p>
+                <h2>Premium</h2>
+                <ul class="features" style="margin-top: 40px;">
+                    <li>12 Months <span style="float: right;">₹2500/-</span></li>
+                    <hr>
+                    <li>Feed <span style="float: right;">5 Post/Month</span></li>
+                    <hr>
+                    <li>Job Opening <span style="float: right;">2 Post (In Year)</span> </li>
+                    <hr>
+                    <li>Market On Sell<span style="float: right;">1 Post/Month </span></li>
+                    <hr>
+                    <li>Market On Demand <span style="float: right;">1 Post/Month </span></li>
+                </ul>
+                <button>Buy Now</button>
+            </div>
+            <div class="plan">
+                <h2>Platinum</h2>
+                <ul class="features" style="margin-top: 40px;">
+                    <li>Lifetime <span style="float: right;">₹6000/-</span></li>
+                    <hr>
+                    <li>Feed <span style="float: right;">6 Post/Month</span></li>
+                    <hr>
+                    <li>Job Opening <span style="float: right;">2 Post (In Year)</span> </li>
+                    <hr>
+                    <li>Market On Sell<span style="float: right;">1 Post/Month </span></li>
+                    <hr>
+                    <li>Market On Demand <span style="float: right;">1 Post/Month </span></li>
+                </ul>
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
