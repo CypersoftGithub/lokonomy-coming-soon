@@ -182,7 +182,24 @@ p {
     width: 100%;}
 
 }}
+.float {
+    position: fixed;
+    bottom: 4%;
+    right: 55px;
+    width:60px;
+}
+@media only screen and (max-width: 768px) {
+  .float {
+    width:10px;
+}
+}
 
+ .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #e0e0e0;
+        }
     </style>
 </head>
 
@@ -273,10 +290,19 @@ p {
                     <hr>
                     <li>Market On Demand <span style="float: right;">1 Post/Month </span></li>
                 </ul>
-                <button>Contact Us</button>
+                <button>Buy Now</button>
             </div>
         </div>
     </div>
+
+    <div class="float">
+      <a href="https://api.whatsapp.com/send?phone=+918758520110&%20text=I%20am%20looking%20for%20Your%20Product"
+        target="_blank"><img src="./images/whatsapp.svg"  alt=""></a>
+    </div>
+<div class="footer">
+    <p><strong>Read <a href="lokonomy-privacy-policy.html">Privacy & Policies</a> And 
+      <a href="terms-and-conditions.html">Terms & Conditions</a> And 
+          <a href="support.html" style="color: blue;"> Support</a>.</strong></p></div>
 </body>
 
 </html>
