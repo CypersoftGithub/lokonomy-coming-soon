@@ -1,8 +1,4 @@
-# Allow access to .well-known
-<Directory "/.well-known">
-    Allow from all
-</Directory>
-
-# Ensure Cloudflare can access it
-RewriteEngine On
-RewriteRule ^.well-known/ - [L]
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^.well-known/ - [L]
+</IfModule>
