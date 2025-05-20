@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.lokonomy",
+    "sha256_cert_fingerprints":
+    ["D7:1D:ED:C5:79:82:28:5F:60:CB:07:AD:05:D9:D6:3E:84:32:71:3C:30:11:9C:3C:26:34:E2:0E:7F:4C:D7:F2"]
+  }
+}]
