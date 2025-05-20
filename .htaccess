@@ -1,9 +1,8 @@
-<IfModule mod_headers.c>
-  Header set Access-Control-Allow-Origin "*"
-</IfModule>
-
-<Directory "/.well-known/">
-  Options +Indexes
-  AllowOverride All
-  Require all granted
+# Allow access to .well-known
+<Directory "/.well-known">
+    Allow from all
 </Directory>
+
+# Ensure Cloudflare can access it
+RewriteEngine On
+RewriteRule ^.well-known/ - [L]
