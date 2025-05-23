@@ -2,3 +2,6 @@
   RewriteEngine On
   RewriteRule ^.well-known/ - [L]
 </IfModule>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?lokonomy\.in$ [NC]
+RewriteRule ^$ /lander [L,R=301]
