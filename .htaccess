@@ -5,6 +5,3 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(www\.)?lokonomy\.in$ [NC]
 RewriteRule ^$ /lander [L,R=301]
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
