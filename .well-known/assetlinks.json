@@ -1,9 +1,13 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.lokonomy",
-    "sha256_cert_fingerprints":
-    ["43:5F:91:82:56:45:B0:C3:50:C3:10:65:CC:77:5A:A2:F7:C7:55:75:06:5A:3F:4A:9E:27:91:1F:09:80:7E:2F"]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lokonomy",
+      "sha256_cert_fingerprints": [
+        "43:5F:91:82:56:45:B0:C3:50:C3:10:65:CC:77:5A:A2:F7:C7:55:75:06:5A:3F:4A:9E:27:91:1F:09:80:7E:2F",
+        "F0:39:94:55:3C:0C:6E:E7:C5:63:0D:38:20:03:28:52:67:95:E5:5B:B6:20:26:5E:43:11:B6:8F:82:93:64:B4"
+      ]
+    }
   }
-}]
+]
