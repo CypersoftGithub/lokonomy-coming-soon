@@ -1,7 +1,14 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteRule ^.well-known/ - [L]
+
+  # Ignore SSL verification paths
+  RewriteRule ^\.well-known/ - [L]
+
+  # Force non-www (or change if you prefer www)
+  RewriteCond %{HTTP_HOST} ^www\.lokonomy\.in$ [NC]
+  RewriteRule ^(.*)$ https://lokonomy.in/$1 [L,R=301]
+
+  # Redirect only homepage to /lander (temporary to avoid cache issue)
+  RewriteCond %{REQUEST_URI} ^/$
+  RewriteRule ^$ /lander [L,R=302]
 </IfModule>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^(www\.)?lokonomy\.in$ [NC]
-RewriteRule ^$ /lander [L,R=301]
