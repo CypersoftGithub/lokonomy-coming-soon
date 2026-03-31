@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["DG6FJ7BYCS.com.lokonomy"],
+        "paths": ["/app*"]
+      }
+    ]
+  }
+}
