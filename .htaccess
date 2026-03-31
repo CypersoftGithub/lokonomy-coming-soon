@@ -1,8 +1,11 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Ignore SSL paths
+  # Allow .well-known files (no redirects or rewrites)
   RewriteRule ^\.well-known/ - [L]
+
+  # Allow apple-app-site-association at root
+  RewriteRule ^apple-app-site-association$ - [L]
 
   # Force non-www
   RewriteCond %{HTTP_HOST} ^www\.lokonomy\.in$ [NC]
@@ -12,3 +15,8 @@
   RewriteCond %{THE_REQUEST} \s/+\s [NC]
   RewriteRule ^$ /lander [L,R=302]
 </IfModule>
+
+# Set correct content type for Apple file
+<Files "apple-app-site-association">
+  ForceType application/json
+</Files>
