@@ -4,6 +4,11 @@
   # Allow .well-known files (no redirects or rewrites)
   RewriteRule ^\.well-known/ - [L]
 
+  # Set correct content type for Apple file
+<Files "apple-app-site-association">
+  Header set Content-Type "application/json"
+</Files>
+
   # Allow apple-app-site-association at root
   RewriteRule ^apple-app-site-association$ - [L]
 
@@ -17,8 +22,3 @@
   RewriteCond %{THE_REQUEST} \s/+\s [NC]
   RewriteRule ^$ /lander [L,R=302]
 </IfModule>
-
-# Set correct content type for Apple file
-<Files "apple-app-site-association">
-  Header set Content-Type "application/json"
-</Files>
